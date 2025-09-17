@@ -24,7 +24,8 @@ for address in addresses:
 # Соединяем две строки из кортежа в единую строку с помощью стрелки  --->, у которой тоже тип данных строка (join с этим типом работает)
 pre_result = (' -----> '.join(x) for x in zip(addresses, match))
 
-# Выводим список без квадратных скобок
+# Выводим список pre_result без квадратных скобок
 result = '\n'.join(str(i) for i in pre_result)
 
 print(result)
+
